@@ -30,7 +30,6 @@ public class TethysServlet extends HttpServlet {
 		Connection con = null;
 		Statement stmt = null;
 		ResultSet rs = null;
-      // Set response content type
 		response.setContentType("text/html");
 		try{
 			ctx = new InitialContext();
@@ -40,7 +39,7 @@ public class TethysServlet extends HttpServlet {
 			
 			rs = stmt.executeQuery("select distinct host as dh, pluginid, name from scorecard limit 10");
 			while(rs.next()){            
-                out.println(rs.getString("dh") + " * " + rs.getString("pluginid") + " * " + rs.getString("name") + "<br>");
+				out.println(rs.getString("dh") + " * " + rs.getString("pluginid") + " * " + rs.getString("name") + "<br>");
             }
 		}catch(NamingException e){
 			e.printStackTrace();
