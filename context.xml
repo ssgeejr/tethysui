@@ -29,7 +29,7 @@
         maxActive="5" maxIdle="3" maxWait="10000"
         username="telco" password="telco"
         driverClassName="com.mysql.jdbc.Driver"
-        url="jdbc:mysql:/europa:3306/telco"
+        url="jdbc:mysql://europa:3306/telco"
 	/>
 	
 	<!--
