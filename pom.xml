@@ -32,9 +32,10 @@
 					<configuration>
 						<filesets>
 							<fileset>
-								<directory>docker</directory>
+								<directory>C:\dev\tools\tomcat8\webapps</directory>
 								<includes>
 										<include>tethysui.war</include>
+										<include>tethysui</include>
 								</includes>
 								<followSymlinks>false</followSymlinks>
 							</fileset>
@@ -46,7 +47,7 @@
 			<artifactId>maven-war-plugin</artifactId>
 			<configuration>
 				<warName>tethysui</warName>
-				<outputDirectory>docker/</outputDirectory>
+				<outputDirectory>C:\dev\tools\tomcat8\webapps</outputDirectory>
 			</configuration>
 		</plugin>
 	</plugins>	

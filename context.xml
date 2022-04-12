@@ -27,9 +27,9 @@
     -->
 	<Resource name="jdbc/scds" auth="Container" type="javax.sql.DataSource"
         maxActive="5" maxIdle="3" maxWait="10000"
-        username="telco" password="telco"
+        username="scorecard" password="scorecard"
         driverClassName="com.mysql.jdbc.Driver"
-        url="jdbc:mysql://europa:3306/telco"
+        url="jdbc:mysql://tethys:3306/scorecard"
 	/>
 	
 	<!--
