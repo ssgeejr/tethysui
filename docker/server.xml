@@ -159,7 +159,7 @@
                prefix="localhost_access_log" suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
 			   
-		<Context path="" docBase="pasedb"/>
+		<Context path="" docBase="tethysui"/>
 <!--		<Context path="ROOT" docBase="ROOT"/> -->
 		
       </Host>
