@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+    pasedb:
+        image: tethysui
+        container_name: tethysui
+        restart: always
+        ports:
+            - 80:8080
+        extra_hosts:
+            - "tethysdb:172.31.39.212"
