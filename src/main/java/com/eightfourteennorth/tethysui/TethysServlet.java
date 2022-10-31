@@ -88,7 +88,7 @@ public class TethysServlet extends HttpServlet {
 			out.println("High: " + totalItems[1] + "<br>");
 			out.println("Medium: " + totalItems[2] + "<br>");
 			out.println("Low: " + totalItems[3] + "<br>");
-		
+			
 			out.println("************************************<br>");
 
 			fetchGroupTotals = con.prepareStatement("select "
@@ -152,6 +152,8 @@ public class TethysServlet extends HttpServlet {
 			out.println("Low New: " + closedItems[3] + "<br>");
 			out.println("************************************<br>");
 
+//			return;
+
 
 			fetchGroupTotals = con.prepareStatement("select "
 				+"\n count(distinct hash) as total,"
@@ -187,12 +189,10 @@ public class TethysServlet extends HttpServlet {
 				float numer = 0f;
 				for(int top = 0; top < 10; top++){
 					rs.next();
-					numer = rs.getFloat("total");
-					out.println(df.format( ((numer/denom)*100))  + "% * " + rs.getInt("total") + " * " + rs.getString("pluginid") + " * " + rs.getString("name") + "<br>");
+					out.println(df.format( ((rs.getFloat("total")/denom)*100))  + "% * " + rs.getInt("total") + " * " + rs.getString("pluginid") + " * " + rs.getString("name") + "<br>");
 				}
 				out.println("************************************<br>");
 			}
-			
 				
 				
 /*			

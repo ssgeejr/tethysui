@@ -1,0 +1,1 @@
+java -cp "C:\dev\wmmc\tethysui\target\tethysui\WEB-INF\classes;C:\dev\tools\repo\mysql\mysql-connector-java\8.0.20\mysql-connector-java-8.0.20.jar" com.eightfourteennorth.tethysui.DataValidation
